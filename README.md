@@ -7,7 +7,11 @@ Currently implemented:
 - Simple rate limiter (using concurrent hashmap)
 - Redis Rate Limiter (using Redis). Requires Redis server running.
 
-### To-do
+### To-do and implement
+
+- Client identifier builder
+- Rules service, DB, cache, retriever
+- 
 
 - Develop various algorithm examples using:
   - token bucket
