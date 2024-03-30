@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.RateLimiterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-03-30T03:08:27" hostname="BADZPC" time="0.017">
-  <properties/>
-  <testcase name="allowRequestTest()" classname="org.example.RateLimiterTest" time="0.015"/>
-  <testcase name="requestBlockedTest()" classname="org.example.RateLimiterTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
