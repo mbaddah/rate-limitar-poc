@@ -3,11 +3,11 @@ package org.example;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class RateLimiter {
+public class SimpleRateLimiter {
     private final int limit;
     private final ConcurrentHashMap<String, AtomicInteger> requestCounts = new ConcurrentHashMap<>();
 
-    public RateLimiter(int limit) {
+    public SimpleRateLimiter(int limit) {
         this.limit = limit;
     }
 
