@@ -1,8 +1,14 @@
-# Rate limiter poc
+# Rate limiter(s) poc
+
+Simple poc to demo a variety of rate limiters.
+
+Currently implemented:
+
+- Simple rate limiter (using concurrent hashmap)
+- Redis Rate Limiter (using Redis). Requires Redis server running.
 
 ### To-do
 
-- Use Redis to store requests counts per ID + user ID
 - Develop various algorithm examples using:
   - token bucket
   - leaking bucket
