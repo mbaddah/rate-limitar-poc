@@ -11,10 +11,10 @@ Currently implemented:
 
 - Client identifier builder
 - Rules service, DB, cache, retriever
-- 
+
 
 - Develop various algorithm examples using:
-  - token bucket
+  - token bucket (wip)
   - leaking bucket
   - fixed window
   - sliding window
