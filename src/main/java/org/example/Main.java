@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        RateLimiter rateLimiter = new RateLimiter(5);
+        SimpleRateLimiter rateLimiter = new SimpleRateLimiter(5);
         for (int i = 0; i < 10; i++) {
             String key = "user1";
             if(rateLimiter.allowRequest(key)) {
@@ -11,6 +11,18 @@ public class Main {
                 System.out.println("Requested blocked");
             }
         }
+
+        RedisRateLimiter redisRateLimiter = new RedisRateLimiter();
+        // Simulate some requests
+        for (int i = 0; i < 10; i++) {
+            if (redisRateLimiter.acquire()) {
+                System.out.println("Request " + i + " allowed");
+            } else {
+                System.out.println("Request " + i + " blocked");
+            }
+        }
+        redisRateLimiter.shutdown();
+
 
     }
 }
